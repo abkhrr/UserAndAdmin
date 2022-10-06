@@ -1,0 +1,26 @@
+dependencies {
+    implementation ExternalLibraryDependencies.retrofit
+    implementation ExternalLibraryDependencies.retrofitCoroutineAdapter
+    implementation ExternalLibraryDependencies.retrofitAdapter
+    implementation ExternalLibraryDependencies.retrofitConverterGson
+    implementation ExternalLibraryDependencies.retrofitMoshiConverter
+    implementation ExternalLibraryDependencies.gson
+
+    implementation ExternalLibraryDependencies.okhttp
+    implementation ExternalLibraryDependencies.okHttpMockWebServer
+    implementation ExternalLibraryDependencies.okhttpLoggingInterceptor
+
+    implementation ExternalLibraryDependencies.hiltAndroid
+    kapt ExternalLibraryDependencies.hiltCompilerAndroid
+
+    implementation ExternalLibraryDependencies.glide
+    annotationProcessor ExternalLibraryDependencies.glideCompiler
+    implementation ExternalLibraryDependencies.shimmer
+
+    implementation ExternalLibraryDependencies.loopjAsync
+    implementation ExternalLibraryDependencies.enthuaSkeleton
+    implementation ExternalLibraryDependencies.shimmerIoSuperCharge
+    implementation ExternalLibraryDependencies.runtimePermission
+    debugImplementation ExternalLibraryDependencies.chucker
+    releaseImplementation ExternalLibraryDependencies.chuckerNoOp
+}

@@ -1,0 +1,42 @@
+dependencies {
+    implementation KotlinDependencies.kotlinStdLibs
+    implementation KotlinDependencies.kotlinExtensions
+    implementation KotlinDependencies.coroutines
+    implementation KotlinDependencies.coroutinesCore
+
+    implementation AndroidCommonDependencies.navigationFragment
+    implementation AndroidCommonDependencies.navigationUi
+
+    implementation AndroidCommonDependencies.lifecycle
+    implementation AndroidCommonDependencies.lifecycleVM
+    implementation AndroidCommonDependencies.lifecycleVMSavedState
+    implementation AndroidCommonDependencies.lifecycleReactive
+    implementation AndroidCommonDependencies.lifecycleLiveData
+    implementation AndroidCommonDependencies.lifecycleProcess
+    implementation AndroidCommonDependencies.lifecycleRuntime
+    implementation AndroidCommonDependencies.lifecycleRuntimeKtx
+    implementation AndroidCommonDependencies.lifecycleCommonJava8
+    implementation AndroidCommonDependencies.lifecycleCompiler
+
+    implementation AndroidCommonDependencies.room
+    kapt AndroidCommonDependencies.roomCompiler
+    implementation AndroidCommonDependencies.roomCommon
+    implementation AndroidCommonDependencies.roomRxJava
+    implementation AndroidCommonDependencies.roomKtx
+
+    implementation AndroidCommonDependencies.workRunTime
+    implementation AndroidCommonDependencies.core
+    implementation AndroidCommonDependencies.legacySupport
+    implementation AndroidCommonDependencies.androidActivity
+
+    implementation AndroidCommonDependencies.swipeRefreshLayout
+    implementation AndroidCommonDependencies.material
+    implementation AndroidCommonDependencies.appcompat
+    implementation AndroidCommonDependencies.constraint
+    implementation AndroidCommonDependencies.cardView
+    implementation AndroidCommonDependencies.recyclerview
+    implementation AndroidCommonDependencies.pagingCommon
+    implementation AndroidCommonDependencies.activityKtx
+    implementation AndroidCommonDependencies.fragment
+    implementation 'com.android.support:multidex:1.0.3'
+}

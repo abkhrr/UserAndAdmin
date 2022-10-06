@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    defaultConfig {
+        applicationId AndroidConfig.androidAppId
+    }
+}
+
+apply from: project.rootProject.file('danamon-android.gradle')
+apply from: project.rootProject.file('danamon-android-common.gradle')
+apply from: project.rootProject.file('danamon-external-library.gradle')
+apply from: project.rootProject.file('danamon-test.gradle')
+
+dependencies {
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    implementation project(':common')
+    implementation project(':libraries:domain')
+}

@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+}
+
+apply from: project.rootProject.file('danamon-android.gradle')
+apply from: project.rootProject.file('danamon-android-common.gradle')
+apply from: project.rootProject.file('danamon-external-library.gradle')
+apply from: project.rootProject.file('danamon-test.gradle')
+
+dependencies {
+    implementation project(':common')
+}

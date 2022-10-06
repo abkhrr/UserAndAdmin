@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+
+rootProject.name = "DanamonTest"
+include ':app'
+include ':libraries:domain'
+include ':libraries:data'
+include ':libraries:remote'
+include ':libraries:local'
+include ':common'

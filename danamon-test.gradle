@@ -1,0 +1,23 @@
+dependencies {
+    testImplementation TestDependencies.jUnit
+    androidTestImplementation TestDependencies.coreTest
+    androidTestImplementation TestDependencies.jUnitExt
+    androidTestImplementation TestDependencies.espresso
+
+    implementation TestDependencies.pagingRunTime
+    testImplementation TestDependencies.pagingRunTime
+
+    testImplementation TestDependencies.hiltTest
+    kaptTest ExternalLibraryDependencies.daggerCompiler
+    androidTestImplementation TestDependencies.hiltTest
+    testImplementation TestDependencies.coroutinesTest
+    testImplementation TestDependencies.robolectric
+    androidTestImplementation TestDependencies.robolectric
+
+    testImplementation TestDependencies.mockk
+    androidTestImplementation TestDependencies.mockkAndroid
+
+    testImplementation TestDependencies.coreTest
+    androidTestImplementation TestDependencies.coreTest
+    testImplementation TestDependencies.assertj
+}
